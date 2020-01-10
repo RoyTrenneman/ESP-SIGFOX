@@ -1,5 +1,5 @@
 # ESP-SIGFOX
-ESP32 and SIGFOX module integration
+ESP8266 and SIGFOX module integration
 
 pio install lib 1893 89
 
