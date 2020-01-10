@@ -16,4 +16,4 @@ Depending to your Sigfox Backend configuration, I set a http2Mqtt bridge (thanks
 
 Here my Sigfox callback configuration :
 
-![Alt text](./sigfox.jpg)
+![Alt text](./sigfox.JPG)
