@@ -10,9 +10,9 @@ pio lib dependancy: PubSubClient_ID89 c99-sigfox-wisol-WSSFM10R1AT_ID1893
 
 Use platform = espressif8266@2.3.0 due to issue with tha latest version.
 
-On my side, I use MQTT message .
+On my side, I use MQTT message in order to manage GPS data sent by the Sigfox Module.
 
-Depending to your Sigfox Backend configuration, I set a http2Mqtt bridge (thanks to https://github.com/petkov/http_to_mqtt)
+Depending to the Sigfox Backend configuration which use GET or POST methods, I set a http2Mqtt bridge which is listening on port 5000 via my IP  (thanks to https://github.com/petkov/http_to_mqtt)
 
 Here my Sigfox callback configuration :
 
