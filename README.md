@@ -1,5 +1,5 @@
 # ESP-SIGFOX
-ESP8266 and SIGFOX module integration
+ESP8266 and SIGFOX module [Wisol SFM10R1](https://yadom.fr/carte-breakout-sfm10r1.html) integration
 
 ## Framework used: Arduino
 
