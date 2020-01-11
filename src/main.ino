@@ -113,7 +113,7 @@ void setup() {
 
 void sendmqtt() {
   inputString.trim();
-  String MyByte = inputString.substring(21);
+  String MyByte = inputString.substring(21); // print only the LSB Byte received 
   client.connect("ESP8266Client", mqttUser, mqttPassword);
   client.publish("sigfox/RECEIVE_DATA", String(MyByte).c_str() );
   client.connect("ESP8266Client", mqttUser, mqttPassword);
@@ -130,13 +130,13 @@ void loop() {
     // get the new byte:
     delay(1000);
     char inChar = (char)wisol_serial.read();
-    Serial.print(inChar);
+    Serial.print(inChar); // Here we receive "OK \n"
     if (inChar == '\n') {
      while ( wisol_serial.available() > 0) {
       delay(500);
       char inChar = (char)wisol_serial.read();
       i++;
-      if ( i > 3) inputString += inChar;
+      if ( i > 3) inputString += inChar; // Remove "RX="
       data = true;
       digitalWrite(14, HIGH); 
       }
