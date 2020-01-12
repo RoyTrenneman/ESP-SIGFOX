@@ -12,7 +12,7 @@ Use platform = espressif8266@2.3.0 due to issue with the latest version.
 
 On my side, I use MQTT message in order to manage GPS data sent by the Sigfox Module.
 
-Depending to the Sigfox Backend configuration which use GET or POST methods, I set a http2Mqtt bridge which is listening on port 5000 via my IP  (thanks to https://github.com/petkov/http_to_mqtt)
+Depending on the Sigfox Backend configuration which uses GET or POST methods, I set a http2Mqtt bridge which is listening on port 5000 via my IP  (thanks to https://github.com/petkov/http_to_mqtt)
 
 Here my Sigfox callback configuration :
 
